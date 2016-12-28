@@ -69,8 +69,8 @@ img{
 	border-style:none;
 	display: block;
     margin: 0 auto;
-    margin-top: 136px;
-	margin-bottom: 50px;
+    margin-top: 16px;
+	margin-bottom: 16px;
 }
 svg:not(:root){
 	overflow:hidden
@@ -339,8 +339,13 @@ ul.w3-ul li:last-child{
 	border-bottom:none
 }
 .w3-tooltip,.w3-display-container{
-	position:relative
+	position:fixed;
+	width:100%;
+	z-index: 1;
 	}
+.w3-display-container{
+	box-shadow: 0px 2px 10px rgb(20,20,20)
+}
 .w3-tooltip .w3-text{
 	display:none
 	}
@@ -585,7 +590,11 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 @-webkit-keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 @keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 .w3-container{
-	padding:0.01em 16px
+	padding:0.01em 1px;
+	position: relative;
+}
+.w3-top-container{
+	padding:116px 1px;
 }
 .w3-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
 .w3-example{background-color:#f1f1f1;padding:0.01em 16px}
