@@ -69,7 +69,7 @@ img{
 	border-style:none;
 	display: block;
     margin: 0 auto;
-    margin-top: 76px;
+    margin-top: 136px;
 	margin-bottom: 50px;
 }
 svg:not(:root){
@@ -186,6 +186,13 @@ h1,h2,h3,h4,h5,h6{
 .wide_font{
 	letter-spacing:4px
 }
+
+.title_font{
+	font-size:40px;
+	letter-spacing:25px;
+	font-weight: 100;
+}
+
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
 	font-weight:inherit
 }
@@ -238,7 +245,7 @@ a{
 	border:none;
 	display:inline-block;
 	outline:0;
-	padding:6px 16px;
+	padding:0px 16px;
 	vertical-align:middle;
 	overflow:hidden;
 	text-decoration:none!important;
@@ -249,7 +256,7 @@ a{
 	white-space:nowrap
 }
 .btn:hover,.btn-block:hover,.btn-floating:hover,.btn-floating-large:hover{
-	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+	/*box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)*/
 }
 .btn,.btn-floating,.btn-floating-large,.w3-closenav,.w3-opennav,.btn-block{
 	-webkit-touch-callout:none;
@@ -513,7 +520,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 @media screen and (max-width:992px){.w3-sidenav.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}}
 @media screen and (min-width:993px){.w3-sidenav.w3-collapse{display:block!important}}
 .w3-top,.w3-bottom{
-	position:absolute;
+	position:fixed;
 	width:100%;
 	/*left: .25%;*/
 	z-index:1
@@ -577,7 +584,9 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-spin{animation:w3-spin 2s infinite linear;-webkit-animation:w3-spin 2s infinite linear}
 @-webkit-keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 @keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-.w3-container{padding:0.01em 16px}
+.w3-container{
+	padding:0.01em 16px
+}
 .w3-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
 .w3-example{background-color:#f1f1f1;padding:0.01em 16px}
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
@@ -650,13 +659,11 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 .w3-hover-sand:hover{
 	color:#000!important;
-	background-color:rgb(255, 253, 249)!important
+	background-color:rgb(253, 245, 230)!important
 }
-.menu_colors{
+.menu_colors,.menu_hover_color:hover{
 	color: rgb(255,255,255);
 	background-color: rgb(35, 31, 23)
-
-
 }
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
