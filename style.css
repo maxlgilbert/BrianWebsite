@@ -452,9 +452,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	display:table;
 	clear:both
 }
-.w3-col{
-	float:left;
-	width:100%
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{
+	float:left;width:100%
 }
 .tab12{
 	width:8.33333%
@@ -668,7 +667,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 .w3-hover-sand:hover{
 	color:#000!important;
-	background-color:rgb(253, 245, 230)!important
+	background-color:rgb(255, 253, 249)!important
 }
 .menu_colors,.menu_hover_color:hover{
 	color: rgb(255,255,255);
