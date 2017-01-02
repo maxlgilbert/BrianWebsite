@@ -16,6 +16,12 @@ body{
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
 	display:block
 }
+footer{
+	float:left;
+	float:bottom;
+	width:195px;
+	position:fixed;
+}
 audio,canvas,progress,video{
 	display:inline-block
 	}
@@ -70,7 +76,7 @@ img{
 	display: block;
     margin: 0 auto;
     margin-top: 16px;
-	margin-bottom: 0px;
+	margin-bottom: 16px;
 }
 svg:not(:root){
 	overflow:hidden
@@ -146,7 +152,8 @@ html,body{
 /*	font-family:Verdana,sans-serif;
 
 */	
-	font-family: 'Alef', sans-serif;
+/*	font-family: 'Lato', sans-serif;
+*/	font-family: 'Droid Sans', sans-serif;
 	font-size:15px;
 	line-height:1.5
 	}
@@ -155,11 +162,15 @@ html{
 }
 h1,h2,h3,h4,h5,h6{
 	/*font-family:"Segoe UI",Arial,sans-serif*/
-	font-family: 'Alef', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Droid Sans', sans-serif;
+
 }
 
 .wide_font{
-	font-family:"Segoe UI",Arial,sans-serif
+	/*font-family:"Segoe UI",Arial,sans-serif*/
+	font-family: 'Asap', sans-serif;
+
 }
 h1{
 	font-size:36px
@@ -182,7 +193,11 @@ h6{
 
 p{
 	/*font-family:"Segoe UI",Arial,sans-serif*/
-	font-family: 'Alef', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+	/*font-family: 'Droid Sans', sans-serif;*/
+	font-family:"Times New Roman",Times,serif;
+	font-size:16px;
+
 
 }
 
@@ -198,9 +213,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .title_font{
-	font-size:40px;
-	letter-spacing:25px;
-	font-weight: 100;
+	font-size:200%;
+	letter-spacing:5px;
+	font-weight: 80;
+	/*text-align: center;*/
+	font-family: 'Asap', sans-serif;
 }
 .tab_font{
 	font-size:16px;
@@ -262,9 +279,9 @@ a{
 	vertical-align:middle;
 	overflow:hidden;
 	text-decoration:none!important;
-	color:#fff;
-	background-color: .menu_colors;
-	text-align:center;
+/*	color:#fff;
+	background-color: .menu_colors;*/
+	/*text-align:center;*/
 	cursor:pointer;
 	white-space:nowrap
 }
@@ -329,8 +346,10 @@ a{
 	background-color:#ccc
 }
 .w3-badge,.w3-tag,.w3-sign{
-	background-color: rgb(66, 58, 43);
-	color:rgb(255, 255, 255);
+/*	background-color: rgb(66, 58, 43);
+	color:rgb(255, 255, 255);*/
+/*	color:#000!important;
+	background-color:rgb(229, 217, 195)!important;*/
 	display:inline-block;
 	padding-left:8px;
 	padding-right:8px;
@@ -354,7 +373,7 @@ ul.w3-ul li:last-child{
 .w3-tooltip,.w3-display-container{
 	position:fixed;
 	width:75%;
-	margin: 0 12.5%;
+	margin: 0 0%;
 	z-index: 1;
 	}
 .w3-display-container{
@@ -487,7 +506,9 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .tab1{
 	width:99.99999%
 }
-@media only screen and (min-width:601px){
+/*@media only screen and (min-width:601px){*/
+	/*TODO: CHECK ON MOBILE*/
+@media only screen{
 .mtab6{
 	width:16.66666%
 }
@@ -521,7 +542,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.l11{width:91.66666%}
 .w3-col.l12{width:99.99999%}}
 .w3-content{
-	max-width:980px;
+	max-width:100%;
 	margin:auto
 }
 .w3-rest{overflow:hidden}
@@ -590,7 +611,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}
 .w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .w3-padding-32{padding-top:32px!important;padding-bottom:0px!important}
-.w3-padding-48{padding-top:48px!important;padding-bottom:0px!important}
+.w3-padding-48{padding-top:8px!important;padding-bottom:0px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-padding-128{padding-top:128px!important;padding-bottom:128px!important}
 .w3-padding-0{padding:0!important}
@@ -677,9 +698,14 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
 .w3-sand{
 	color:#000!important;
-	background-color:rgb(253, 245, 230)!important
+	background-color:rgb(255, 253, 249)!important
 }
-.w3-hover-sand:hover{
+.w3-nav-sand, .w3-hover-none{
+	color:#000!important;
+	background-color:rgb(229, 217, 195)!important
+}
+
+.w3-hover-sand:hover, .w3-active-sand{
 	color:#000!important;
 	background-color:rgb(255, 253, 249)!important
 }
