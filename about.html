@@ -4,14 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
-<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
 body, html {
     height: 100%;
     /*font-family: "Inconsolata", sans-serif;*/
-    font-family: 'Asap', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: rgb(255, 253, 249);
 }
 
@@ -77,7 +82,7 @@ body, html {
 
 
 <header class="w3-display-container" id="home">
-  <nav class="w3-sidenav w3-nav-sand" style="width:195px">
+  <nav class="w3-sidenav w3-nav-sand" style="width:195px; letter-spacing: 1.75px">
         <a href="main.html" class="float:left;clear:left;btn title_font w3-hover-none" >BRIAN PLATZER</a>
         <a href="main.html" class="btn-block w3-hover-sand">BED-STUY IS BURNING</a>
         <a href="#" class="btn-block w3-hover-none">ABOUT BRIAN</a>
@@ -92,12 +97,13 @@ body, html {
 <div class="w3-sand w3-large">
 
 <!-- About Container -->
-<div class="w3-container w3-bottom" id="about" style = "position:static">
+<div class="w3-container" id="about" style = "position:static">
   <div class="w3-content" style="max-width:700px;float:left; margin-right:3%;margin-left:30%">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag wide_font w3-padding-left w3-padding-right">About Brian</span></h5>
-    <p>Brian Platzer has an MFA from the Johns Hopkins Writing Seminars, and a BA from Columbia University. His writing has appeared often in the New Yorker’s Shouts and Murmurs and McSweeney’s Internet Tendency, as well as in the New York Times, The New Republic, Salon, and elsewhere. He lives with his wife and two young sons in Bed-Stuy, Brooklyn, and teaches middle school English in Manhattan.</p>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag wide_font w3-padding-left w3-padding-right">ABOUT BRIAN</span></h5>
+    <p>Brian Platzer has an MFA from the Johns Hopkins Writing Seminars, and a BA from Columbia University. His writing has appeared often in the New Yorker’s Shouts and Murmurs and McSweeney’s Internet Tendency, as well as in the New York Times, the New Republic, Salon, and elsewhere. He lives with his wife and two young sons in Bed-Stuy, Brooklyn, and teaches middle school English in Manhattan. </p>
     <img src="./images/portrait.jpg" style="width:75%;max-width:1000px" class="w3-margin-top">
-    <p>Brian Platzer has an MFA from the Johns Hopkins Writing Seminars, and a BA from Columbia University. His writing has appeared often in the New Yorker’s Shouts and Murmurs and McSweeney’s Internet Tendency, as well as in the New York Times, The New Republic, Salon, and elsewhere. He lives with his wife and two young sons in Bed-Stuy, Brooklyn, and teaches middle school English in Manhattan.</p>
+    <p>In addition to writing and teaching, Brian is co-founder of <a href="http://nycteacherswhotutor.com/" target = "_blank" class = "text_hover_color">Teachers Who Tutor | NYC</a>, New York City’s only tutoring company where all the tutors are classroom teachers with master’s degrees.  
+</p>
   </div>
 </div>
 
@@ -110,27 +116,12 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-bottom footer_color w3-padding-4 w3-tiny" style="float:left;width:195px">
   <!-- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-  <p>twitter/facebook</p>
+  <p>
+
+  <a href= "https://twitter.com/bplatzer?lang=en" target = "_blank">
+    <img style = "display:inline;margin:0px" src = "twitter_logo.png" width="32" height="32"></a> </p>   
 </footer>
 
-<script>
-
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-// document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>
