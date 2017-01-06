@@ -153,7 +153,11 @@ html,body{
 
 */	
 /*	font-family: 'Lato', sans-serif;
-*/	font-family: 'Droid Sans', sans-serif;
+*/	
+	/*font-family: 'Droid Sans', sans-serif;*/
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+
 	font-size:15px;
 	line-height:1.5
 	}
@@ -163,13 +167,20 @@ html{
 h1,h2,h3,h4,h5,h6{
 	/*font-family:"Segoe UI",Arial,sans-serif*/
 	/*font-family: 'Lato', sans-serif;*/
-	font-family: 'Droid Sans', sans-serif;
+	/*font-family: 'Droid Sans', sans-serif;*/
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+
 
 }
 
 .wide_font{
 	/*font-family:"Segoe UI",Arial,sans-serif*/
-	font-family: 'Asap', sans-serif;
+	/*font-family: 'Asap', sans-serif;*/
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+
+
 
 }
 h1{
@@ -195,7 +206,8 @@ p{
 	/*font-family:"Segoe UI",Arial,sans-serif*/
 	/*font-family: 'Lato', sans-serif;*/
 	/*font-family: 'Droid Sans', sans-serif;*/
-	font-family:"Times New Roman",Times,serif;
+	/*font-family:"Times New Roman",Times,serif;*/
+	font-family: 'Roboto Slab', serif;
 	font-size:16px;
 
 
@@ -217,7 +229,10 @@ h1,h2,h3,h4,h5,h6{
 	letter-spacing:5px;
 	font-weight: 80;
 	/*text-align: center;*/
-	font-family: 'Asap', sans-serif;
+	/*font-family: 'Asap', sans-serif;*/
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+
 }
 .tab_font{
 	font-size:16px;
@@ -539,15 +554,16 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	width:74.99999%
 }
 }
-@media only screen and (min-width:993px){
+/*@media only screen and (min-width:993px){*/
+@media only screen{
 .w3-col.l1{width:8.33333%}
 .w3-col.l2{width:16.66666%}
 .w3-col.l3,.w3-quarter{width:24.99999%}
-.w3-col.l4,.w3-third{width:33.33333%}
+.w3-col.l4,.w3-third{width:42%}
 .w3-col.l5{width:41.66666%}
 .w3-col.l6,.w3-half{width:49.99999%}
 .w3-col.l7{width:58.33333%}
-.w3-col.l8,.w3-twothird{width:66.66666%}
+.w3-col.l8,.w3-twothird{width:58%}
 .w3-col.l9,.w3-threequarter{width:74.99999%}
 .w3-col.l10{width:83.33333%}
 .w3-col.l11{width:91.66666%}
@@ -720,9 +736,9 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	color:#000!important;
 	background-color:rgb(255, 253, 249)!important
 }
-.menu_colors,.menu_hover_color:hover{
-	color: rgb(255,255,255);
-	background-color: rgb(35, 31, 23)
+.menu_colors,.text_hover_color:hover{
+	color: rgb(163, 132, 75);
+	background-color:rgb(255, 253, 249)
 }
 
 /*menu-color{
