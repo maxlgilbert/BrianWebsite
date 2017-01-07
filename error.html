@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Brian Platzer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+body, html {
+    height: 100%;
+    /*font-family: "Inconsolata", sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 253, 249);
+}
+
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<!-- <div class="w3-top">
+  <div class="w3-row w3-padding menu_colors">
+      <a href="main.html" class="btn title_font tab1 menu_hover_color" >BRIAN PLATZER</a>
+  </div>
+  <div class="w3-row w3-padding menu_colors">
+    <div class="w3-col tab6">
+      <a href="main.html" class="btn-block w3-hover-sand">HOME</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="about.html" class="btn-block w3-hover-sand">ABOUT</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="Bed_Stuy_Is_Burning.html" class="btn-block w3-hover-sand">BED STUY IS BURNING</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="publications.html" class="btn-block w3-hover-sand">PUBLICATIONS</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="#" class="btn-block w3-hover-sand">EVENTS</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="contact.html" class="btn-block w3-hover-sand">CONTACT</a>
+    </div>    
+  </div>
+</div> -->
+
+<!-- Header with image -->
+<!-- <header class="w3-display-container" id="home">
+  <div class="w3-row w3-padding menu_colors">
+      <a href="main.html" class="btn title_font tab1 menu_hover_color" >BRIAN PLATZER</a>
+  </div>
+  <div class="w3-row w3-padding menu_colors">
+    <div class="w3-col tab6">
+      <a href="main.html" class="btn-block w3-hover-sand">HOME</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="about.html" class="btn-block w3-hover-sand">ABOUT</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="Bed_Stuy_Is_Burning.html" class="btn-block w3-hover-sand">BED-STUY IS BURNING</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="publications.html" class="btn-block w3-hover-sand">PUBLICATIONS</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="#" class="btn-block w3-hover-sand">EVENTS</a>
+    </div>
+    <div class="w3-col tab6">
+      <a href="contact.html" class="btn-block w3-hover-sand">CONTACT</a>
+    </div>    
+  </div>
+</header> -->
+
+<header class="w3-display-container" id="home">
+  <nav class="w3-sidenav w3-nav-sand" style="width:195px; letter-spacing: 1.75px">
+        <a href="main.html" class="float:left;clear:left;btn title_font w3-hover-none" >BRIAN PLATZER</a>
+        <a href="main.html" class="btn-block w3-hover-sand">BED-STUY IS BURNING</a>
+        <a href="about.html" class="btn-block w3-hover-sand">ABOUT BRIAN</a>
+        <a href="publications.html" class="btn-block w3-hover-sand">PUBLICATIONS</a>
+        <a href="#" class="btn-block w3-hover-none">EVENTS</a>
+        <a href="contact.html" class="btn-block w3-hover-sand">CONTACT</a>
+  </nav>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px;float:left; margin-right:3%;margin-left:30%">
+    <p>Whoops! You've reached the error page. Navigate back with the bar on the left.</p>
+  </div>
+</div>
+
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-bottom footer_color w3-padding-4 w3-tiny" style="float:left;width:195px">
+  <!-- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+  <p>
+
+  <a href= "https://twitter.com/bplatzer?lang=en" target = "_blank">
+    <img style = "display:inline;margin:0px" src = "twitter_logo.png" width="32" height="32"></a> </p>   
+</footer>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+//document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
