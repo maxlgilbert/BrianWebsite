@@ -23,55 +23,6 @@ body, html {
 </style>
 <body>
 
-<head>
-    <script src="dist/aws-sdk.min.js"></script>
-    <script type="text/javascript">
-        var LPAWS = {};
-
-        // Initialize the Amazon Cognito credentials provider
-        AWS.config.region = 'us-east-2'; // Region
-        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-            IdentityPoolId: 'us-east-2:149a7a75-de45-4795-a8d4-c81b95719916',
-        });
-
-        LPAWS.sendToTopic = function() {
-
-          // TODO Pop up new page to let them know submitted?
-          // Empty check
-          // var first = document.querySelector('#First').value;
-          // var last = document.querySelector('#First').value;
-          // var email = document.querySelector('#First').value;
-          // var subject = document.querySelector('#First').value;
-          // var message = document.querySelector('#First').value;
-          // if (first != undefined && first != "" &&
-          //     last != undefined && last != "" &&
-          //     email != undefined && email != "" &&
-          //     subject != undefined && subject != "" &&
-          //     message != undefined && message != ""
-          //   ) {
-          var sns = new AWS.SNS();
-          var params = {
-              //Message: 'Hello topic', /* required */
-              Message: 'First name: ' + document.querySelector('#First').value + '\n' +
-                       'Last name: ' + document.querySelector('#Last').value + '\n' +
-                       'Email: ' + document.querySelector('#Email').value + '\n' +
-                       'Subject: ' + document.querySelector('#Subject').value + '\n' +
-                       'Message: ' + document.querySelector('#Message').value + '\n',
-              Subject: 'Browser SNS publish - contact form',
-              TopicArn: 'arn:aws:sns:us-east-2:158590617696:com-website-contact-form'
-          };
-          sns.publish(params, function(err, data) {
-              if (err){
-                console.log(err, err.stack); // an error occurred
-              } else {
-                console.log(data); // successful response
-                window.location.href = "thank_you.html"
-              }           
-          });
-        };
-    </script>
-</head>
-
 
 
 <header class="w3-display-container" id="home">
@@ -81,7 +32,7 @@ body, html {
         <a href="about.html" class="btn-block w3-hover-sand">ABOUT BRIAN</a>
         <a href="publications.html" class="btn-block w3-hover-sand">PUBLICATIONS</a>
         <a href="events.html" class="btn-block w3-hover-sand">EVENTS</a>
-        <a href="#" class="btn-block w3-hover-none">CONTACT</a>
+        <a href="contact.html" class="btn-block w3-hover-sand">CONTACT</a>
   </nav>
 </header>
 
@@ -96,27 +47,10 @@ body, html {
     <!-- <h5 class="w3-center w3-padding-48"><span class="w3-tag wide_font w3-padding-left w3-padding-right">WHERE TO FIND US</span></h5> -->
    <!--  <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
     <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p> -->
-    <p>I love hearing from readers! Send me a line and I will do my best to reply.</p>
-    <form id="Contact" action="form.asp" target="_blank">
-      <p><input class="w3-input-half w3-padding-16 w3-border" type="text" placeholder="First Name" required name="First Name" id="First"><input class="w3-input-half w3-padding-16 w3-border" type="text" placeholder="Last Name" required name="Last Name" id="Last"style="margin-left: 1.5%"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email Address" required name="Email" id="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" id="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" id="Message"></p>
-      <!--<p><button class="btn w3-padding" type="submit" onsubmit="LPAWS.sendToTopic(); return false;" >SUBMIT</button></p>-->
-      <p><button class="btn w3-padding" type="submit">SUBMIT</button></p>
-    </form>
+    <p>Thank you for reaching out! I will do my best to reply.</p>
    <!--  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg6vUI3CxRpmtWqOu7dOGm2k6xXW7JuMAvpNd2vCJLhrTCAQ/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
   </div>
 </div>
-
-<script>
-document.getElementById("Contact").onsubmit = function() {submitFunction(); return false;};
-
-function submitFunction() {
-    LPAWS.sendToTopic();
-    return false;
-}
-</script>
 
 
 <!-- End page content -->
