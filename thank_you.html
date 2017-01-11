@@ -26,13 +26,14 @@ body, html {
 
 
 <header class="w3-display-container" id="home">
-  <nav class="w3-sidenav w3-nav-sand" style="width:195px; letter-spacing: 1.75px">
+  <nav class="w3-sidenav w3-nav-sand nav-width" style="letter-spacing: 1.75px">
         <a href="main.html" class="float:left;clear:left;btn title_font w3-hover-none" >BRIAN PLATZER</a>
-        <a href="main.html" class="btn-block w3-hover-sand">BED-STUY IS BURNING</a>
-        <a href="about.html" class="btn-block w3-hover-sand">ABOUT BRIAN</a>
-        <a href="publications.html" class="btn-block w3-hover-sand">PUBLICATIONS</a>
-        <a href="events.html" class="btn-block w3-hover-sand">EVENTS</a>
-        <a href="contact.html" class="btn-block w3-hover-sand">CONTACT</a>
+        <div style = "padding:4px"></div>
+        <a href="main.html" class="btn-block w3-hover-sand tab-font">BED-STUY IS BURNING</a>
+        <a href="about.html" class="btn-block w3-hover-sand tab-font">ABOUT BRIAN</a>
+        <a href="publications.html" class="btn-block w3-hover-sand tab-font">PUBLICATIONS</a>
+        <a href="events.html" class="btn-block w3-hover-sand tab-font">EVENTS</a>
+        <a href="contact.html" class="btn-block w3-hover-sand tab-font">CONTACT</a>
   </nav>
 </header>
 
@@ -57,32 +58,14 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-bottom footer_color w3-padding-4 w3-tiny" style="float:left;width:195px">
+<footer class="w3-center footer_color w3-padding-4 w3-tiny nav-width" style="float:left;z-index:1;bottom:0">
   <!-- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-  <p>
+  <p style = "margin:3px">
 
   <a href= "https://twitter.com/bplatzer?lang=en" target = "_blank">
     <img style = "display:inline;margin:0px" src = "twitter_logo.png" width="32" height="32"></a> </p>   
 </footer>
 
-<script 
-
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-//document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>
