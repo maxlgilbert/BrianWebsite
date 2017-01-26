@@ -548,22 +548,23 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 .main_section{
 	float:left; 
-	margin-left:110px; 
-	padding-right: 10px;
+	margin-left:120px; 
+	/*padding-right: 10px;*/
 }
 h5{
 	font-size:13px;
 }
+h6{
+	font-size:11px;
+}
 p{
 	font-size: 11px;
 }
-
-.intext_photo{
-	width:60%;
-	float:left; 
-	margin-top: 2px;
-	margin-right: 5px
+.right-padding{
+	padding-right: 20px
 }
+
+
 .contact{
 	float:left; 
 	margin-left:110px; 
@@ -601,7 +602,6 @@ p{
 	/*font-family: 'Asap', sans-serif;*/
 	font-family: 'Oswald', sans-serif;
 	/*font-family: 'Fjalla One', sans-serif;*/
-
 }
 .tab-font{
 	font-size:15px;
@@ -610,23 +610,24 @@ p{
 	max-width:900px;
 	float:left; 
 	margin-right:3%;
-	margin-left:205px; 
+	margin-left:220px; 
 	padding-right: 10px;
 /*	border-right-style: double;
 	border-color:rgb(229, 217, 195)*/
 }
+.right-padding{
+	padding-right: 30px
+}
 h5{
 	font-size:18px;
+}
+h6{
+	font-size:16px;
 }
 p{
 	font-size: 16px;
 }
-.intext_photo{
-	width:50%;
-	float:left; 
-	margin-top: 2px;
-	margin-right: 5px
-}
+
 .contact{
 	max-width:700px;
 	float:left; 
@@ -691,7 +692,7 @@ p{
 	max-width:900px;
 	float:left; 
 	margin-right:3%;
-	margin-left:205px; 
+	margin-left:220px; 
 	padding-right: 10px;
 /*	border-right-style: double;
 	border-color:rgb(229, 217, 195)*/
@@ -705,14 +706,14 @@ p{
 h5{
 	font-size:18px;
 }
+h6{
+	font-size:16px;
+}
 p{
 	font-size: 16px;
 }
-.intext_photo{
-	width:50%;
-	float:left; 
-	margin-top: 2px;
-	margin-right: 5px
+.right-padding{
+	padding-right: 30px
 }
 
 }
